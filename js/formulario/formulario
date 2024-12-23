@@ -1,0 +1,26 @@
+// Crear el botón de pago
+   const payButton = document.createElement('button');
+   payButton.type = 'button';
+   payButton.id = 'btnPagar';
+   payButton.textContent = 'Realizar el pago';
+   payButton.addEventListener('click', function() {
+       // Evitar hacer nada si no es un formulario válido
+       if (!validarFormularioPago()) {
+           return;
+       }
+
+////
+
+// Simular la animación de pago
+mostrarAnimacionDePago();
+setTimeout(() => {
+   alert('¡Pago realizado exitosamente!');
+   limpiarCarrito();
+   document.getElementById('cart-total').textContent = '0';
+   // Recargar la página y resetear el formulario
+   location.reload();
+}, 2000);
+
+////
+
+});

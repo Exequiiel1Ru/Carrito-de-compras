@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./fotos/vaqui.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/carrito.css">
+    <title>TeCNOFEdeX</title>
+</head>
+
+<style>
+
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#registrate.html">Registrate</a></li>
+            </ul>
+        </nav>
+        <h1>TeCNOFEdeX</h1>
+        <input type="text" id="searchInput" placeholder="Buscar producto..." oninput="filtrarProductos()" />
+    </header>
+
+    <section id="carrito">
+        <h2>Carrito de Compras 🛒</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+        
+        <div style="display: flex; gap: 10px;">
+            <button id="payButton" onclick="mostrarModalPago()" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 1rem; transition: background-color 0.3s ease;">
+                Pagar
+            </button>
+    
+            <button id="clear-cart" style="background-color: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 1rem; transition: background-color 0.3s ease;">
+                Cancelar carrito
+            </button>
+        </div>
+    </section>
+    
+
+    <section id="catalogo">
+        <h2>Productos disponibles</h2>
+        <div id="products" class="product-list"></div>
+        <p id="noProductsMessage" class="hidden">No se encontraron productos.</p>
+    </section>
+
+    </div>
+</div>
+
+
+    <footer>
+        <p>&copy; 2024 Catálogo de Productos. Todos los derechos reservados a Ruiz Federico.</p>
+    </footer>
+
+<script src="./js/carrito.js"></script>
+<script src="./js/1formulario.js"></script>
+
+</script>
+    
+</body>
+</html>
